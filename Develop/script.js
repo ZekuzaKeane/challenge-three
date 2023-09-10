@@ -7,6 +7,7 @@ var specialCase = ["!", "@", "#", "$", "%", "^", "&", "*"]
 var length = 0;
 var chars = 0;
 var genPass = [];
+var password = "";
 
 // Generate password
 
@@ -55,7 +56,7 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   Options();
-  var password = generatePassword();
+  password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
